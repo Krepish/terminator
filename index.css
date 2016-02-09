@@ -5,6 +5,10 @@ html, body, .section, .camera {
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .section {
     height: 100%;
     position: relative;
@@ -21,10 +25,13 @@ html, body, .section, .camera {
 
 .camera__canvas {
     width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .controls {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 }
